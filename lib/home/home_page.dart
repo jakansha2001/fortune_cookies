@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:fortune_cookies/home/widgets/hover_image.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    List items = [
-      Image.asset('assets/images/fortune_cookie.png'),
-      Image.asset('assets/images/fortune_cookie.png'),
-      Image.asset('assets/images/fortune_cookie.png'),
-      Image.asset('assets/images/fortune_cookie.png'),
-      Image.asset('assets/images/fortune_cookie.png'),
-      Image.asset('assets/images/fortune_cookie.png')
-    ];
+    // List items = [
+    //   Image.asset('assets/images/fortune_cookie.png'),
+    //   Image.asset('assets/images/fortune_cookie.png'),
+    //   Image.asset('assets/images/fortune_cookie.png'),
+    //   Image.asset('assets/images/fortune_cookie.png'),
+    //   Image.asset('assets/images/fortune_cookie.png'),
+    //   Image.asset('assets/images/fortune_cookie.png')
+    // ];
+    List<Image> items = List<Image>.generate(6, (index) {
+      return Image.asset('assets/images/fortune_cookie.png');
+    });
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -85,7 +89,8 @@ class HomePage extends StatelessWidget {
                       itemBuilder: (context, index) {
                         return
                             //Image.asset('assets/images/fortune_cookie.png');
-                            items[index];
+                            //items[index];
+                            HoverImage(image: items[index]);
                       },
                     ),
                   ),
