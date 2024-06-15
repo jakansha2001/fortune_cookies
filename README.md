@@ -17,7 +17,7 @@ The Fortune Cookie App is a mobile application built using Flutter that provides
 ![Screenshot_1718411219](https://github.com/jakansha2001/fortune_cookies/assets/64529996/e37c2d2d-aeb1-4ee3-a927-4b1e5368a27b)
 *Caption: Home Screen displaying fortune cookies.*
 
-![Screenshot_1718411221](https://github.com/jakansha2001/fortune_cookies/assets/64529996/1e51e40d-8a6c-4b75-936f-42166498afb5)
+![Screenshot_1718412642](https://github.com/jakansha2001/fortune_cookies/assets/64529996/9f780156-b8cc-4aaf-b2c3-53cf8cf0248a)
 *Caption: Fortune Screen displaying a random fortune.*
 
 ## Getting Started
