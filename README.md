@@ -1,16 +1,58 @@
-# fortune_cookies
+# Fortune Cookie App
 
-A new Flutter project.
+A simple Flutter application that displays random fortunes from a predefined list.
+
+## Overview
+
+The Fortune Cookie App is a mobile application built using Flutter that provides users with random quotes or fortunes. Unlike traditional fortune cookies, this app uses a predefined list of fortunes stored locally. Users can fetch a new fortune with the click of a button.
+
+## Features
+
+- Displays random fortunes from a predefined list.
+- Allows users to fetch a new fortune with a button click.
+- User-friendly interface with minimalistic design.
+
+## Screenshots
+
+![Screenshot_1718411219](https://github.com/jakansha2001/fortune_cookies/assets/64529996/e37c2d2d-aeb1-4ee3-a927-4b1e5368a27b)
+*Caption: Home Screen displaying fortune cookies.*
+
+![Screenshot_1718411221](https://github.com/jakansha2001/fortune_cookies/assets/64529996/1e51e40d-8a6c-4b75-936f-42166498afb5)
+*Caption: Fortune Screen displaying a random fortune.*
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run the Fortune Cookie App on your local machine, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+1. **Clone the repository:**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+   ```bash
+   git clone https://github.com/your/repository.git
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd fortune_cookie_app
+
+3. **Install dependencies:**
+
+   Ensure all dependencies are installed by running:
+
+   ```bash
+   flutter pub get
+
+4. **Run the app:**
+
+   Use the following command to launch the app on an emulator or connected device:
+
+   ```bash
+   flutter run
+
+## Usage
+
+- Tap on any fortune cookie on the home screen to see a new fortune.
+- Each fortune is randomly selected from a static list defined in the application code.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or create a pull request on GitHub.
