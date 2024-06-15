@@ -129,14 +129,17 @@ class HomePage extends StatelessWidget {
                       // ),
 
                       Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 25.0, horizontal: 5),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 25.0, horizontal: 5),
 
                     /// This method is ideal when you don't know the exact number of children elements you want to display in the grid.
                     child: GridView.builder(
                       //itemCount: 4,
-                      itemCount: items.length, // Number of items in your data source
+                      itemCount:
+                          items.length, // Number of items in your data source
                       /// This defines the layout properties of the grid. Here, we're using SliverGridDelegateWithFixedCrossAxisCount for a fixed number of columns.
-                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
                         crossAxisSpacing: 10,
                         mainAxisSpacing: 5,
@@ -150,7 +153,8 @@ class HomePage extends StatelessWidget {
                             GestureDetector(
                                 onTap: () {
                                   final random = Random();
-                                  final randomFortune = fortunes[random.nextInt(fortunes.length)];
+                                  final randomFortune =
+                                      fortunes[random.nextInt(fortunes.length)];
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(

@@ -9,7 +9,8 @@ class HoverImage extends StatefulWidget {
   State<HoverImage> createState() => _HoverImageState();
 }
 
-class _HoverImageState extends State<HoverImage> with SingleTickerProviderStateMixin {
+class _HoverImageState extends State<HoverImage>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
 
@@ -33,27 +34,6 @@ class _HoverImageState extends State<HoverImage> with SingleTickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
-    // if (kIsWeb) {
-    //   // Web-specific hover behavior
-    //   return MouseRegion(
-    //     onEnter: (_) => _controller.forward(),
-    //     onExit: (_) => _controller.reverse(),
-    //     child: ScaleTransition(
-    //       scale: _scaleAnimation,
-    //       child: widget.image,
-    //     ),
-    //   );
-    // } else {
-    //   // Mobile-specific tap behavior
-    //   return GestureDetector(
-    //     onTapDown: (_) => _controller.forward(),
-    //     onTapUp: _controller.reverse(),
-    //     child: ScaleTransition(
-    //       scale: _scaleAnimation,
-    //       child: widget.image,
-    //     ),
-    //   );
-    // }
     return MouseRegion(
       onEnter: (_) => _controller.forward(),
       onExit: (_) => _controller.reverse(),
