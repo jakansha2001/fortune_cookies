@@ -28,15 +28,18 @@ class FortuneScreen extends StatelessWidget {
             ),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 8.0),
-              child: Text(
-                'Here is the affirmative result as your answer for today!',
-                maxLines: 2,
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'OpenSans',
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 15.0),
+                child: Text(
+                  'Here is the affirmative result as your answer for today!',
+                  maxLines: 2,
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'OpenSans',
+                  ),
+                  textAlign: TextAlign.center,
                 ),
-                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
