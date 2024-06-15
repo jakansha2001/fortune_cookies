@@ -29,7 +29,7 @@ class FortuneScreen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 8.0),
               child: Text(
-                'Choose a cookie and read the predicton!',
+                'Choose a cookie and read the prediction!',
                 maxLines: 2,
                 style: TextStyle(
                   fontSize: 22,
@@ -57,8 +57,7 @@ class FortuneScreen extends StatelessWidget {
                 fortune,
                 maxLines: 3,
                 textAlign: TextAlign.center,
-                style:
-                    const TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
               ),
             ),
             const SizedBox(
