@@ -27,7 +27,7 @@ To run the Fortune Cookie App on your local machine, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone [https://github.com/your/repository.git](https://github.com/jakansha2001/fortune_cookies)
+   git clone https://github.com/jakansha2001/fortune_cookies
 
 2. **Navigate to the project directory:**
 
