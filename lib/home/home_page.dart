@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
           child: Column(
             children: [
               const Padding(
-                padding: EdgeInsets.only(top: 10.0),
+                padding: EdgeInsets.only(top: 10.0, bottom: 10),
                 child: Text(
                   'Fortune cookies',
                   style: TextStyle(
@@ -90,9 +90,6 @@ class HomePage extends StatelessWidget {
                     fontFamily: 'PlayfairDisplay',
                   ),
                 ),
-              ),
-              const SizedBox(
-                height: 10,
               ),
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8.0),
@@ -150,7 +147,7 @@ class HomePage extends StatelessWidget {
                             GestureDetector(
                                 onTap: () {
                                   final random = Random();
-                                  final randomFortune = fortunes[random.nextInt(fortunes.length)];
+                                  final randomFortune = fortunes[random.nextInt(fortunes.length)]; // fortunes[5]
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
